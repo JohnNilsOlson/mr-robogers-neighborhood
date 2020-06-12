@@ -9,13 +9,13 @@ function robo(numInput) {
   }
     
   if (isNaN(numInt) === true) {
-    return alert("Please enter a number!");
+    return "Please enter a number!";
   } else if (numSplit.indexOf("3") >= 0) {
-    return alert("Won't you be my neighbor?")  
+    return "Won't you be my neighbor?"  
   } else if (numSplit.indexOf("2") >= 0) {
-    return alert("Boop!")
+    return "Boop!"
   } else if (numSplit.indexOf("1") >= 0) {
-    return alert("Beep!")  
+    return "Beep!"
   } else {
       output = numArray.map(String);
       for(i = 0; i < output.length; i++)
@@ -30,14 +30,16 @@ function robo(numInput) {
         if ((output[i]).includes("1")) {
           output.splice([i], 1, "Boop!");
         }
-    return alert((output).reverse());
+    return (output).reverse();
   }
 }
 
 $(document).ready(function() {
   $("#number").submit(function(event) {
-    event.preventDefault;
-    let numInput = $("input#num-input").val();
-    robo(numInput);
+    event.preventDefault();
+    const numInput = $("input#num-input").val();
+    $("#hidden").show();
+    $("#output").empty();
+    $("#output").append(robo(numInput));
   });
 });
