@@ -2,7 +2,12 @@ function robo(numInput) {
   if (isNaN(numInput) === true) {
     return alert("Please enter a number!");
   } else {
-    return alert(numInput);
+    numArray = [];
+    while (numInput >= 0) {
+      (numArray).push(numInput);
+      numInput --;
+    }
+    return alert((numArray).reverse());
   }
 }
 
