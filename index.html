@@ -8,22 +8,26 @@
     <title>Mr. Robogers' Neighborhood</title>
   </head>
   <body>
-    <div>
-      <h1 class="center justified">It's a beautiful day in the neighborhood...</h1>
-      <img src="img/mrroboger.jpg" alt="Mr. Roboger" class="center" width=300px>
-      <h4 class="center justified">Help Mr. Rogers program Mr. Robogers!</h4>
-      <form class="center" id="number">
-        <div class="form-group">
-          <label for="num-input" class="justified">Please enter a number</label>
-          <input id="num-input" class="form-control" type="text">
-          <br>
-          <button type="submit" class="center">Submit!</button>
-        </div>
-      </form>
-    </div>
-    <div id=hidden>
-      <h4 class="center justified">Mr. Robogers says:</h4>
-      <p class= "center justified" id=output></p>
+    <div class="container">
+      <div class="center">
+        <h1 class="justified">It's a beautiful day in the neighborhood...</h1>
+        <img src="img/mrroboger.jpg" alt="Mr. Roboger" width=400px>
+        <h4 class="justified">Help Mr. Rogers program Mr. Robogers!</h4>
+        <form id="number">
+          <div class="form-group">
+            <label for="num-input">Please enter a number:</label>
+            <input id="num-input" class="form-control" type="text">
+            <br>
+            <button type="submit">Input!</button>
+          </div>
+        </form>
+      </div>
+      <div class="center" id=hidden>
+        <h4 class="justified">Mr. Robogers says:</h4>
+        <p id="output"></p>
+        <h4 class="justified">Looks like you still have some work to do.</h4>
+        <button type="button" id="reload">Try again?</button>
+      </div>
     </div>
   </body>
 </html>

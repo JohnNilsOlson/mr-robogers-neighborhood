@@ -2,7 +2,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 400px;
+  text-align: center;
 }
 
 .justified {
@@ -11,4 +12,14 @@
 
 #hidden {
   display: none;
+}
+
+#output {
+  background-color: rgb(215, 215, 215);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+
 }

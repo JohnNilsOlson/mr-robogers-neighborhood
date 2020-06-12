@@ -30,7 +30,7 @@ function robo(numInput) {
         if ((output[i]).includes("1")) {
           output.splice([i], 1, "Boop!");
         }
-    return (output).reverse();
+    return (output).reverse().join(", ");
   }
 }
 
@@ -38,8 +38,12 @@ $(document).ready(function() {
   $("#number").submit(function(event) {
     event.preventDefault();
     const numInput = $("input#num-input").val();
-    $("#hidden").show();
+    $("body").scrollTop(1000);
+    $("#hidden").fadeIn(500);
     $("#output").empty();
     $("#output").append(robo(numInput));
+  });
+  $("#reload").click(function() {
+    location.reload(true);
   });
 });
