@@ -15,11 +15,11 @@
 }
 
 #output {
-  background-color: rgb(215, 215, 215);
+  background-color: lightgray;
   padding: 10px;
   border-radius: 5px;
 }
 
 .container {
-
+  padding-bottom: 20px;
 }

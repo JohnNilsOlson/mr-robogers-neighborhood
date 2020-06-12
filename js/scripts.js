@@ -38,7 +38,7 @@ $(document).ready(function() {
   $("#number").submit(function(event) {
     event.preventDefault();
     const numInput = $("input#num-input").val();
-    $("body").scrollTop(1000);
+    $("body").scrollTop(200);
     $("#hidden").fadeIn(500);
     $("#output").empty();
     $("#output").append(robo(numInput));
