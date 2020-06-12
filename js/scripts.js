@@ -17,10 +17,20 @@ function robo(numInput) {
   } else if (numSplit.indexOf("1") >= 0) {
     return alert("Beep!")  
   } else {
-    numArray.splice((numArray.indexOf(3)), 1, "Won't you be my neighbor?");
-    numArray.splice((numArray.indexOf(1)), 1, "Boop!");
-    numArray.splice((numArray.indexOf(2)), 1, "Beep!");
-    return alert((numArray).reverse());
+      output = numArray.map(String);
+      for(i = 0; i < output.length; i++)
+        if ((output[i]).includes("3")) {
+          output.splice([i], 1, "Won't you be my neighbor?");
+        }
+      for(i = 0; i < output.length; i++)
+        if ((output[i]).includes("2")) {
+          output.splice([i], 1, "Beep!");
+        }
+      for(i = 0; i < output.length; i++)
+        if ((output[i]).includes("1")) {
+          output.splice([i], 1, "Boop!");
+        }
+    return alert((output).reverse());
   }
 }
 
