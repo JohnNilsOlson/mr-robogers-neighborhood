@@ -5,6 +5,8 @@ function robo(numInput) {
     
   if (isNaN(numInt) === true) {
     return alert("Please enter a number!");
+  } else if (numSplit.indexOf("3") >= 0) {
+    return alert("Won't you be my neighbor?")  
   } else if (numSplit.indexOf("2") >= 0) {
     return alert("Boop!")
   } else if (numSplit.indexOf("1") >= 0) {
