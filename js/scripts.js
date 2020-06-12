@@ -2,6 +2,11 @@ function robo(numInput) {
   numInt = parseInt(numInput);
   numSplit = numInput.split("");
   numArray = [];
+
+  while (numInput >= 0) {
+    (numArray).push(numInput);
+    numInput --;
+  }
     
   if (isNaN(numInt) === true) {
     return alert("Please enter a number!");
@@ -12,10 +17,9 @@ function robo(numInput) {
   } else if (numSplit.indexOf("1") >= 0) {
     return alert("Beep!")  
   } else {
-    while (numInt >= 0) {
-      (numArray).push(numInt);
-      numInt --;
-    }
+    numArray.splice((numArray.indexOf(3)), 1, "Won't you be my neighbor?");
+    numArray.splice((numArray.indexOf(1)), 1, "Boop!");
+    numArray.splice((numArray.indexOf(2)), 1, "Beep!");
     return alert((numArray).reverse());
   }
 }
