@@ -10,12 +10,6 @@ function robo(numInput) {
     
   if (isNaN(numInt) === true) {
     return "Please enter a number!";
-  } else if (numSplit.indexOf("3") >= 0) {
-    return "Won't you be my neighbor?"  
-  } else if (numSplit.indexOf("2") >= 0) {
-    return "Boop!"
-  } else if (numSplit.indexOf("1") >= 0) {
-    return "Beep!"
   } else {
       output = numArray.map(String);
       for(i = 0; i < output.length; i++)
